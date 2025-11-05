@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객 후기 - 한우명가</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* 별점 표시를 위한 CSS */
+        .star-rating {
+            color: #FFD700; /* 금색 */
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <header class="bg-gray-800 shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-3xl font-bold text-red-500">
+                <a href="index.html">한우명가 (韓牛名家)</a>
+            </div>
+            <ul class="flex space-x-6 items-center">
+                <li><a href="index.html" class="text-gray-300 hover:text-red-400 font-medium transition duration-300">홈</a></li>
+                <li><a href="index.html#about" class="text-gray-300 hover:text-red-400 font-medium transition duration-300">한우 소개</a></li>
+                <li><a href="usercomment.html" class="text-red-400 font-bold transition duration-300 border-b-2 border-red-400">고객 후기</a></li>
+                <li>
+                    <a href="recipe.html" 
+                       class="bg-red-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-red-700 transition duration-300 shadow-lg">
+                       레시피 보기
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="py-20">
+        <div class="container mx-auto px-6">
+            <h1 class="text-5xl font-extrabold text-center text-white mb-4">
+                ⭐ 고객님의 솔직한 후기 ⭐
+            </h1>
+            <p class="text-xl text-center text-gray-400 mb-16">
+                한우명가와 함께한 특별한 경험을 공유해주세요.
+            </p>
+
+            <div class="text-center mb-16">
+                <button class="bg-red-600 text-white px-8 py-3 rounded-lg font-semibold text-lg hover:bg-red-700 transition duration-300 shadow-xl">
+                    + 후기 작성하기
+                </button>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                
+                <div class="bg-gray-800 p-8 rounded-xl shadow-2xl border-t-4 border-red-500">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="star-rating text-2xl">
+                            ★★★★★
+                        </div>
+                        <span class="text-sm text-gray-500">2025.10.28</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-red-400">
+                        인생 한우를 만났어요! (1++ 등심)
+                    </h3>
+                    <p class="text-gray-300 leading-relaxed mb-4">
+                        마블링이 정말 예술이고, 굽는 내내 고소한 향이 진동했습니다. 입에 넣자마자 사르르 녹는 부드러움과 깊은 육즙 덕분에 가족 모두 행복한 식사였습니다. 다음에 또 주문하겠습니다!
+                    </p>
+                    <div class="text-right text-sm font-medium text-gray-400">
+                        - 김** (VIP)
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-xl shadow-2xl border-t-4 border-red-500">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="star-rating text-2xl">
+                            ★★★★☆
+                        </div>
+                        <span class="text-sm text-gray-500">2025.11.01</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-red-400">
+                        부드러움의 끝판왕 (1++ 안심)
+                    </h3>
+                    <p class="text-gray-300 leading-relaxed mb-4">
+                        스테이크로 구웠는데 정말 부드러웠습니다. 다만 제가 굽는 기술이 부족했는지, 등심만큼의 고소함은 덜했지만, 품질은 확실히 최고였습니다. 다음에는 더 잘 구워봐야겠어요.
+                    </p>
+                    <div class="text-right text-sm font-medium text-gray-400">
+                        - 박** </div>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-xl shadow-2xl border-t-4 border-red-500">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="star-rating text-2xl">
+                            ★★★★★
+                        </div>
+                        <span class="text-sm text-gray-500">2025.10.25</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-red-400">
+                        명절 선물로 최고였어요! (채끝 세트)
+                    </h3>
+                    <p class="text-gray-300 leading-relaxed mb-4">
+                        포장 상태도 고급스럽고, 고기 품질도 기대 이상이었습니다. 선물 받은 분들이 모두 극찬하셔서 어깨가 으쓱했습니다. 믿고 주문할 수 있는 한우명가입니다.
+                    </p>
+                    <div class="text-right text-sm font-medium text-gray-400">
+                        - 이**
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-xl shadow-2xl border-t-4 border-red-500">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="star-rating text-2xl">
+                            ★★★★★
+                        </div>
+                        <span class="text-sm text-gray-500">2025.10.20</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-red-400">
+                        캠핑장에서 빛을 발한 한우!
+                    </h3>
+                    <p class="text-gray-300 leading-relaxed mb-4">
+                        캠핑용으로 주문했는데, 불판 위에서 빛깔이 정말 달랐습니다. 야외에서 먹으니 맛이 두 배였고, 숯불 향과 어우러져 환상적인 맛이었습니다.
+                    </p>
+                    <div class="text-right text-sm font-medium text-gray-400">
+                        - 최**
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-xl shadow-2xl border-t-4 border-red-500">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="star-rating text-2xl">
+                            ★★★★★
+                        </div>
+                        <span class="text-sm text-gray-500">2025.10.15</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-red-400">
+                        배송 상태, 신선도 모두 만족합니다!
+                    </h3>
+                    <p class="text-gray-300 leading-relaxed mb-4">
+                        아이스팩이 넉넉하게 들어있어 신선하게 잘 받았습니다. 진공 포장 상태도 꼼꼼해서 좋았고, 고기 색깔만 봐도 품질을 알 수 있었습니다.
+                    </p>
+                    <div class="text-right text-sm font-medium text-gray-400">
+                        - 정**
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-xl shadow-2xl border-t-4 border-red-500">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="star-rating text-2xl">
+                            ★★★★★
+                        </div>
+                        <span class="text-sm text-gray-500">2025.10.10</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-red-400">
+                        아이도 잘 먹는 부드러운 맛
+                    </h3>
+                    <p class="text-gray-300 leading-relaxed mb-4">
+                        질긴 걸 싫어하는 아이 때문에 걱정했는데, 이 집 한우는 정말 부드러워서 아이가 혼자 한 접시를 뚝딱했습니다. 온 가족이 믿고 먹을 수 있습니다.
+                    </p>
+                    <div class="text-right text-sm font-medium text-gray-400">
+                        - 윤**
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="flex justify-center mt-20">
+                <nav class="flex items-center space-x-2">
+                    <a href="#" class="px-4 py-2 text-gray-500 hover:text-red-400">이전</a>
+                    <a href="#" class="px-4 py-2 bg-red-600 text-white rounded-lg font-semibold">1</a>
+                    <a href="#" class="px-4 py-2 text-gray-300 hover:bg-gray-700 rounded-lg">2</a>
+                    <a href="#" class="px-4 py-2 text-gray-300 hover:bg-gray-700 rounded-lg">3</a>
+                    <a href="#" class="px-4 py-2 text-gray-500 hover:text-red-400">다음</a>
+                </nav>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-10 border-t border-gray-700 mt-10">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 한우명가 (Hanwoo Myungga). All rights reserved.</p>
+            <p class="text-sm mt-2">본 웹사이트는 포트폴리오 목적으로 제작되었습니다.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
