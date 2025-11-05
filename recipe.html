@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한우명가 - 추천 레시피</title>
+    <!-- Tailwind CSS 로드 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Inter 폰트 적용 (Tailwind 기본 폰트) */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- 헤더 및 네비게이션 -->
+    <header class="bg-gray-800 shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- 로고 -->
+            <div class="text-3xl font-bold text-red-500">
+                <a href="index.html">한우명가 (韓牛名家)</a>
+            </div>
+            <!-- 메뉴 -->
+            <ul class="flex space-x-6 items-center">
+                <li><a href="index.html" class="text-gray-300 hover:text-red-400 font-medium transition duration-300">홈</a></li>
+                <li><a href="index.html#about" class="text-gray-300 hover:text-red-400 font-medium transition duration-300">한우 소개</a></li>
+                <!-- 현재 페이지 (레시피 보기) - 활성 스타일 적용 -->
+                <li>
+                    <a href="recipe.html" 
+                       class="bg-red-700 text-white px-5 py-2 rounded-full font-semibold transition duration-300 shadow-lg">
+                       레시피 보기
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 메인 콘텐츠 -->
+    <main class="container mx-auto px-6 py-16">
+        
+        <!-- 페이지 타이틀 -->
+        <h1 class="text-5xl font-extrabold text-white text-center mb-16">
+            한우명가 <span class="text-red-500">추천 레시피</span>
+        </h1>
+
+        <!-- 레시피 카드 그리드 -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+            <!-- 레시피 카드 1: 한우 불고기 -->
+            <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden transform transition duration-500 hover:scale-105">
+                <img src="img01.png" 
+                     alt="한우 불고기" 
+                     class="w-full h-56 object-cover">
+                     <!--  -->
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-3 text-white">명품 한우 불고기</h2>
+                    <p class="text-gray-300 mb-5">
+                        남녀노소 누구나 좋아하는 달콤짭조름한 맛. 특별한 날 상차림을 빛내줄 최고의 요리입니다.
+                    </p>
+                    <a href="#" class="font-semibold text-red-400 hover:text-red-300 transition duration-300">
+                        자세히 보기 &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- 레시피 카드 2: 한우 스테이크 -->
+            <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden transform transition duration-500 hover:scale-105">
+                <img src="img01.png" 
+                     alt="한우 스테이크" 
+                     class="w-full h-56 object-cover">
+                     <!--  -->
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-3 text-white">한우 안심 스테이크</h2>
+                    <p class="text-gray-300 mb-5">
+                        입안에서 살살 녹는 부드러운 안심을 이용해 집에서도 고급 레스토랑의 맛을 재현해 보세요.
+                    </p>
+                    <a href="#" class="font-semibold text-red-400 hover:text-red-300 transition duration-300">
+                        자세히 보기 &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- 레시피 카드 3: 한우 육회 -->
+            <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden transform transition duration-500 hover:scale-105">
+                <img src="img01.png" 
+                     alt="한우 육회" 
+                     class="w-full h-56 object-cover">
+                     <!--  -->
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-3 text-white">신선한 한우 육회</h2>
+                    <p class="text-gray-300 mb-5">
+                        신선한 우둔살이나 홍두깨살을 고소한 참기름과 배로 무쳐낸 별미 중의 별미입니다.
+                    </p>
+                    <a href="#" class="font-semibold text-red-400 hover:text-red-300 transition duration-300">
+                        자세히 보기 &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- 추가 레시피 카드 (옵션) -->
+            <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden transform transition duration-500 hover:scale-105">
+                <img src="img01.png" 
+                     alt="한우 갈비찜" 
+                     class="w-full h-56 object-cover">
+                     <!--  -->
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-3 text-white">궁중 한우 갈비찜</h2>
+                    <p class="text-gray-300 mb-5">
+                        부드러운 갈빗살과 달콤한 양념이 어우러져 명절이나 잔칫상에 빠질 수 없는 일품요리입니다.
+                    </p>
+                    <a href="#" class="font-semibold text-red-400 hover:text-red-300 transition duration-300">
+                        자세히 보기 &rarr;
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="bg-gray-900 text-gray-400 py-10 mt-16">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 한우명가 (Hanwoo Myungga). All rights reserved.</p>
+            <p class="text-sm mt-2">본 웹사이트는 포트폴리오 목적으로 제작되었습니다.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한우명가 - 대한민국 최고의 프리미엄 한우</title>
+    <!-- Tailwind CSS 로드 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Inter 폰트 적용 (Tailwind 기본 폰트) */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- 헤더 및 네비게이션 -->
+    <header class="bg-gray-800 shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- 로고 -->
+            <div class="text-3xl font-bold text-red-500">
+                <a href="index.html">한우명가 (韓牛名家)</a>
+            </div>
+            <!-- 메뉴 -->
+            <ul class="flex space-x-6 items-center">
+                <li><a href="index.html" class="text-gray-300 hover:text-red-400 font-medium transition duration-300">홈</a></li>
+                <li><a href="#about" class="text-gray-300 hover:text-red-400 font-medium transition duration-300">한우 소개</a></li>
+                <!-- recipe.html로 연결되는 링크 -->
+                <li>
+                    <a href="recipe.html" 
+                       class="bg-red-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-red-700 transition duration-300 shadow-lg">
+                       레시피 보기
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 메인 콘텐츠 -->
+    <main>
+        <!-- 히어로 섹션 -->
+        <section class="relative h-[60vh] min-h-[400px] flex items-center justify-center text-center text-white overflow-hidden">
+            <!-- 배경 이미지 (플레이스홀더) -->
+            <div class="absolute inset-0 z-0">
+                <img src="img01.png" 
+                     alt="맛있게 구워진 프리미엄 한우" 
+                     class="w-full h-full object-cover brightness-50">
+                     <!--  -->
+            </div>
+            <!-- 히어로 텍스트 -->
+            <div class="relative z-10 p-8 rounded-lg">
+                <h1 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight shadow-text">
+                    차원이 다른 풍미, <br> 대한민국 명품 한우
+                </h1>
+                <p class="text-xl md:text-2xl font-light">
+                    자연이 키우고 정성으로 빚어낸 최고의 맛
+                </p>
+            </div>
+        </section>
+
+        <!-- 한우 소개 섹션 -->
+        <section id="about" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold text-white mb-6">왜 한우인가?</h2>
+                <p class="text-lg text-gray-300 max-w-3xl mx-auto mb-12">
+                    한우는 세계적으로 인정받는 우수한 육질과 풍부한 마블링, 그리고 깊은 감칠맛으로 유명합니다. 
+                    엄격한 사양 관리와 품질 인증을 통해 신뢰할 수 있는 최고의 소고기입니다.
+                </p>
+                
+                <div class="grid md:grid-cols-3 gap-10">
+                    <!-- 품질 카드 1 -->
+                    <div class="bg-gray-700 p-8 rounded-xl shadow-lg transition duration-300 hover:shadow-2xl">
+                        <div class="text-5xl text-red-500 mb-4">🏆</div>
+                        <h3 class="text-2xl font-semibold mb-3 text-white">최고의 품질</h3>
+                        <p class="text-gray-300">
+                            선명한 마블링과 부드러운 육질, 입안 가득 퍼지는 고소한 풍미를 경험하세요.
+                        </p>
+                    </div>
+                    <!-- 품질 카드 2 -->
+                    <div class="bg-gray-700 p-8 rounded-xl shadow-lg transition duration-300 hover:shadow-2xl">
+                        <div class="text-5xl text-red-500 mb-4">🌿</div>
+                        <h3 class="text-2xl font-semibold mb-3 text-white">안전한 관리</h3>
+                        <p class="text-gray-300">
+                            체계적인 이력 관리 시스템으로 생산부터 식탁까지 모든 과정을 투명하게 관리합니다.
+                        </p>
+                    </div>
+                    <!-- 품질 카드 3 -->
+                    <div class="bg-gray-700 p-8 rounded-xl shadow-lg transition duration-300 hover:shadow-2xl">
+                        <div class="text-5xl text-red-500 mb-4">❤️</div>
+                        <h3 class="text-2xl font-semibold mb-3 text-white">풍부한 영양</h3>
+                        <p class="text-gray-300">
+                            단백질과 불포화지방산이 풍부하여 맛과 건강을 동시에 만족시킵니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 제품 추천 섹션 -->
+        <section class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center text-white mb-12">이달의 추천 부위</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- 제품 카드 1: 등심 -->
+                    <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden transform transition duration-500 hover:scale-105">
+                        <img src="img01.png" 
+                             alt="한우 등심" 
+                             class="w-full h-56 object-cover">
+                             <!--  -->
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2 text-white">1++ 등심</h3>
+                            <p class="text-gray-300 mb-4">
+                                풍부한 마블링과 고소한 육즙이 일품인 구이용 최고의 부위입니다.
+                            </p>
+                            <a href="#" class="font-semibold text-red-400 hover:text-red-300 transition duration-300">
+                                구매하기 &rarr;
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 제품 카드 2: 안심 -->
+                    <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden transform transition duration-500 hover:scale-105">
+                        <img src="img01.png" 
+                             alt="한우 안심" 
+                             class="w-full h-56 object-cover">
+                             <!--  -->
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2 text-white">1++ 안심</h3>
+                            <p class="text-gray-300 mb-4">
+                                가장 부드러운 식감을 자랑하며, 스테이크나 이유식으로 좋습니다.
+                            </p>
+                            <a href="#" class="font-semibold text-red-400 hover:text-red-300 transition duration-300">
+                                구매하기 &rarr;
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 제품 카드 3: 채끝 -->
+                    <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden transform transition duration-500 hover:scale-105">
+                        <img src="img01.png" 
+                             alt="한우 채끝" 
+                             class="w-full h-56 object-cover">
+                             <!--  -->
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2 text-white">1++ 채끝</h3>
+                            <p class="text-gray-300 mb-4">
+                                씹는 맛과 풍미가 조화로우며, 다양한 요리에 활용하기 좋습니다.
+                            </p>
+                            <a href="#" class="font-semibold text-red-400 hover:text-red-300 transition duration-300">
+                                구매하기 &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="bg-gray-900 text-gray-400 py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 한우명가 (Hanwoo Myungga). All rights reserved.</p>
+            <p class="text-sm mt-2">본 웹사이트는 포트폴리오 목적으로 제작되었습니다.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
